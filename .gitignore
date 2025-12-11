@@ -1,0 +1,31 @@
+# Large dataset
+data/raw/GTSRB/
+*.zip
+
+# Large models
+models/*.pth
+
+# HLS build outputs
+hls_project/conv_accel_hls/
+hls_project/maxpool_hls/
+hls_project/fc_hls/
+*_hls/
+
+# Vitis build
+vitis_kernel/_x/
+vitis_kernel/*.xclbin
+vitis_kernel/vadd_kernel.xo
+*.log
+*.jou
+.Xil/
+
+# Python
+__pycache__/
+*.pyc
+
+# Temp files
+*.swp
+*~
+nohup.out
+build_pid.txt
+get-pip.py

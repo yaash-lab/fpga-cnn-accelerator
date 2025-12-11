@@ -1,0 +1,1717 @@
+<ENTRY>
+{
+ "thisFile": "/users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Dec 10 16:53:46 2025",
+ "timestampMillis": "1765410826570",
+ "buildStep": {
+  "cmdId": "cfcc0c63-c8b8-4f1c-a2be-afc0ba4070f3",
+  "name": "v++",
+  "logFile": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/link.steps.log",
+  "commandLine": "/share/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform xilinx_u280_gen3x16_xdma_1_202211_1 --save-temps -l vadd_kernel.xo -o vadd_kernel.xclbin ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u280_gen3x16_xdma_1_202211_1",
+   "--save-temps",
+   "-l",
+   "vadd_kernel.xo",
+   "-o",
+   "vadd_kernel.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:53:46 2025",
+ "timestampMillis": "1765410826570",
+ "status": {
+  "cmdId": "cfcc0c63-c8b8-4f1c-a2be-afc0ba4070f3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Dec 10 16:53:49 2025",
+ "timestampMillis": "1765410829561",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u280_gen3x16_xdma_1_202211_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "vadd_kernel",
+    "file": "/users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "vadd_kernel",
+     "file": "/users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/xo/vadd_kernel/vadd_kernel/cpu_sources/vadd_kernel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "vadd_kernel_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2023.2. SW Build 4026344 on 2023-10-11-15:42:10"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 16:53:49 2025",
+ "timestampMillis": "1765410829670",
+ "buildStep": {
+  "cmdId": "fd026b6d-f3cf-4979-ba70-476c75ec56f6",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xo -keep --xpfm /opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm --target hw --output_dir /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int --temp_dir /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xo",
+   "-keep",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int",
+   "--temp_dir",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:53:49 2025",
+ "timestampMillis": "1765410829670",
+ "status": {
+  "cmdId": "fd026b6d-f3cf-4979-ba70-476c75ec56f6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:54:04 2025",
+ "timestampMillis": "1765410844928",
+ "status": {
+  "cmdId": "fd026b6d-f3cf-4979-ba70-476c75ec56f6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 16:54:04 2025",
+ "timestampMillis": "1765410844932",
+ "buildStep": {
+  "cmdId": "c890eb2e-8a29-4cb9-82e9-26934703aa2a",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/sdsl.dat -rtd /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/cf2sw.rtd -nofilter /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/cf2sw_full.rtd -xclbin /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/xclbin_orig.xml -o /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:54:04 2025",
+ "timestampMillis": "1765410844932",
+ "status": {
+  "cmdId": "c890eb2e-8a29-4cb9-82e9-26934703aa2a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:54:08 2025",
+ "timestampMillis": "1765410848932",
+ "status": {
+  "cmdId": "c890eb2e-8a29-4cb9-82e9-26934703aa2a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 16:54:08 2025",
+ "timestampMillis": "1765410848934",
+ "buildStep": {
+  "cmdId": "2cdd0f6d-9794-4a67-9946-7cf07c0cc902",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:54:08 2025",
+ "timestampMillis": "1765410848934",
+ "status": {
+  "cmdId": "2cdd0f6d-9794-4a67-9946-7cf07c0cc902",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 16:54:09 2025",
+ "timestampMillis": "1765410849162",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:54:09 2025",
+ "timestampMillis": "1765410849163",
+ "status": {
+  "cmdId": "2cdd0f6d-9794-4a67-9946-7cf07c0cc902",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 16:54:09 2025",
+ "timestampMillis": "1765410849166",
+ "buildStep": {
+  "cmdId": "de14d684-6448-4d72-b5f4-4fdd76793f2b",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u280_gen3x16_xdma_1_202211_1 -s --remote_ip_cache /users/y_sojis/cnn_accelerator/vitis_kernel/.ipcache --output_dir /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int --log_dir /users/y_sojis/cnn_accelerator/vitis_kernel/_x/logs/link --report_dir /users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link --config /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vplConfig.ini -k /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link --no-info --iprepo /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/xo/ip_repo/xilinx_com_hls_vadd_kernel_1_0 --messageDb /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/run_link/vpl.pb /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u280_gen3x16_xdma_1_202211_1",
+   "-s",
+   "--remote_ip_cache",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/.ipcache",
+   "--output_dir",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int",
+   "--log_dir",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/logs/link",
+   "--report_dir",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link",
+   "--config",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vplConfig.ini",
+   "-k",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/xo/ip_repo/xilinx_com_hls_vadd_kernel_1_0",
+   "--messageDb",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/run_link/vpl.pb",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/users/y_sojis/cnn_accelerator/vitis_kernel\nmisc=BinaryName=vadd_kernel\n\n[connectivity]\nnk=vadd_kernel:1:vadd_kernel_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:54:09 2025",
+ "timestampMillis": "1765410849166",
+ "status": {
+  "cmdId": "de14d684-6448-4d72-b5f4-4fdd76793f2b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Dec 10 16:54:10 2025",
+ "timestampMillis": "1765410850246",
+ "buildStep": {
+  "cmdId": "7c39a3d7-21c1-49a3-a6b7-41a31d40fe07",
+  "name": "vpl",
+  "logFile": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/link.steps.log",
+  "commandLine": "/share/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u280_gen3x16_xdma_1_202211_1 -s --remote_ip_cache /users/y_sojis/cnn_accelerator/vitis_kernel/.ipcache --output_dir /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int --log_dir /users/y_sojis/cnn_accelerator/vitis_kernel/_x/logs/link --report_dir /users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link --config /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vplConfig.ini -k /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link --no-info --iprepo /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/xo/ip_repo/xilinx_com_hls_vadd_kernel_1_0 --messageDb /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/run_link/vpl.pb /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:54:10 2025",
+ "timestampMillis": "1765410850246",
+ "status": {
+  "cmdId": "7c39a3d7-21c1-49a3-a6b7-41a31d40fe07",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Wed Dec 10 16:54:13 2025",
+ "timestampMillis": "1765410853960",
+ "vivadoProject": {
+  "openDir": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 16:54:13 2025",
+ "timestampMillis": "1765410853961",
+ "buildStep": {
+  "cmdId": "29e72409-22a5-42e2-9ed0-ea71eba77157",
+  "name": "vivado",
+  "logFile": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:54:13 2025",
+ "timestampMillis": "1765410853962",
+ "status": {
+  "cmdId": "29e72409-22a5-42e2-9ed0-ea71eba77157",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 16:56:07 2025",
+ "timestampMillis": "1765410967967",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/automation_summary_pre_synthesis.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Dec 10 17:35:25 2025",
+ "timestampMillis": "1765413325186",
+ "buildStep": {
+  "cmdId": "5914be6d-7733-4c7e-941c-402da8a0cb3b",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 17:35:25 2025",
+ "timestampMillis": "1765413325186",
+ "status": {
+  "cmdId": "5914be6d-7733-4c7e-941c-402da8a0cb3b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Dec 10 17:35:25 2025",
+ "timestampMillis": "1765413325187",
+ "buildStep": {
+  "cmdId": "fe684785-4028-40a3-93d1-eb412dc4e19f",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 17:35:25 2025",
+ "timestampMillis": "1765413325187",
+ "status": {
+  "cmdId": "fe684785-4028-40a3-93d1-eb412dc4e19f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:37:53 2025",
+ "timestampMillis": "1765417073204",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:38:51 2025",
+ "timestampMillis": "1765417131602",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:38:51 2025",
+ "timestampMillis": "1765417131604",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:40:42 2025",
+ "timestampMillis": "1765417242604",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/vivado/vpl/prj/prj.runs/impl_1/dr_timing_summary.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_FAIL",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:40:42 2025",
+ "timestampMillis": "1765417242608",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/vivado/vpl/prj/prj.runs/impl_1/dr_timing_summary.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_FAIL",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:40 2025",
+ "timestampMillis": "1765417780975",
+ "status": {
+  "cmdId": "29e72409-22a5-42e2-9ed0-ea71eba77157",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781011",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781012",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781012",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781013",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781013",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781014",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_full_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781014",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781015",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781015",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781016",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781016",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781017",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781017",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781017",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781018",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781019",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_full_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781027",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_proc_sys_reset_kernel_slr2_0_synth_1_ulp_proc_sys_reset_kernel_slr2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781027",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_proc_sys_reset_freerun_slr2_0_synth_1_ulp_proc_sys_reset_freerun_slr2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781028",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_proc_sys_reset_kernel2_slr0_0_synth_1_ulp_proc_sys_reset_kernel2_slr0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781028",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_regslice_control_userpf_2_synth_1_ulp_regslice_control_userpf_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781029",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_regslice_control_userpf_1_synth_1_ulp_regslice_control_userpf_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781029",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_hmss_0_0_synth_1_ulp_hmss_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781029",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_ulp_cmp_0_synth_1_ulp_ulp_cmp_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781030",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_proc_sys_reset_kernel_slr0_0_synth_1_ulp_proc_sys_reset_kernel_slr0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781030",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_proc_sys_reset_kernel_slr1_0_synth_1_ulp_proc_sys_reset_kernel_slr1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781031",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_proc_sys_reset_ctrl_slr1_0_synth_1_ulp_proc_sys_reset_ctrl_slr1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781031",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_proc_sys_reset_ctrl_slr2_0_synth_1_ulp_proc_sys_reset_ctrl_slr2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781032",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_proc_sys_reset_ctrl_slr0_0_synth_1_ulp_proc_sys_reset_ctrl_slr0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781032",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_axi_vip_data_0_synth_1_ulp_axi_vip_data_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781033",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/ulp_ulp_ucs_0_synth_1_ulp_ulp_ucs_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781033",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_097b_user_debug_hub_0_synth_1_bd_097b_user_debug_hub_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781034",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_097b_build_info_0_synth_1_bd_097b_build_info_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781034",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_7cf0_axi_jtag_0_synth_1_bd_7cf0_axi_jtag_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781035",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_097b_user_debug_bridge_0_synth_1_bd_097b_user_debug_bridge_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781035",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_7cf0_bs_switch_1_0_synth_1_bd_7cf0_bs_switch_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781035",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_7cf0_bsip_0_synth_1_bd_7cf0_bsip_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781036",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_58f6_lut_buffer_0_synth_1_bd_58f6_lut_buffer_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781036",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_58f6_xsdbm_0_synth_1_bd_58f6_xsdbm_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781037",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_22c0_gpio_ucs_control_status_0_synth_1_bd_22c0_gpio_ucs_control_status_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781037",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_85ad_interconnect0_2_0_synth_1_bd_85ad_interconnect0_2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781038",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_85ad_slice1_0_0_synth_1_bd_85ad_slice1_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781038",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_85ad_interconnect2_1_0_synth_1_bd_85ad_interconnect2_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781039",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_85ad_slice0_2_0_synth_1_bd_85ad_slice0_2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781039",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_85ad_init_reduce_0_synth_1_bd_85ad_init_reduce_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781040",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_85ad_hbm_inst_0_synth_1_bd_85ad_hbm_inst_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781040",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_22c0_auto_cc_0_synth_1_bd_22c0_auto_cc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781041",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_85ad_vip_S01_0_synth_1_bd_85ad_vip_S01_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781041",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_85ad_axi_apb_bridge_inst_0_synth_1_bd_85ad_axi_apb_bridge_inst_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781042",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/syn/bd_85ad_hbm_reset_sync_SLR0_0_synth_1_bd_85ad_hbm_reset_sync_SLR0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781042",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": "fe684785-4028-40a3-93d1-eb412dc4e19f"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781072",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "fe684785-4028-40a3-93d1-eb412dc4e19f"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781095",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "fe684785-4028-40a3-93d1-eb412dc4e19f"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781096",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpv",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
+  "cmdId": "fe684785-4028-40a3-93d1-eb412dc4e19f"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781125",
+ "status": {
+  "cmdId": "7c39a3d7-21c1-49a3-a6b7-41a31d40fe07",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781148",
+ "status": {
+  "cmdId": "de14d684-6448-4d72-b5f4-4fdd76793f2b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781157",
+ "buildStep": {
+  "cmdId": "5ec2e0c3-aa80-4d42-b291-802407c5f42e",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781157",
+ "status": {
+  "cmdId": "5ec2e0c3-aa80-4d42-b291-802407c5f42e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781159",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781160",
+ "buildStep": {
+  "cmdId": "81b03738-22f9-46df-b8f1-f2e1f4188eb5",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/address_map.xml -sdsl /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/sdsl.dat -xclbin /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/xclbin_orig.xml -rtd /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel.rtd -o /users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel.xml",
+  "args": [
+   "-a",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel.rtd",
+   "-o",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:41 2025",
+ "timestampMillis": "1765417781161",
+ "status": {
+  "cmdId": "81b03738-22f9-46df-b8f1-f2e1f4188eb5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784409",
+ "status": {
+  "cmdId": "81b03738-22f9-46df-b8f1-f2e1f4188eb5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784410",
+ "buildStep": {
+  "cmdId": "ea558ca2-435c-4afa-ad99-671fb842eefa",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel.rtd",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784410",
+ "status": {
+  "cmdId": "ea558ca2-435c-4afa-ad99-671fb842eefa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784414",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784415",
+ "status": {
+  "cmdId": "ea558ca2-435c-4afa-ad99-671fb842eefa",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784415",
+ "buildStep": {
+  "cmdId": "67d97a0b-96ea-49c1-a8bb-101f85d790d9",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeAutomationSummary",
+  "args": [
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/automation_summary.txt"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784416",
+ "status": {
+  "cmdId": "67d97a0b-96ea-49c1-a8bb-101f85d790d9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784417",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/automation_summary.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784418",
+ "status": {
+  "cmdId": "67d97a0b-96ea-49c1-a8bb-101f85d790d9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784418",
+ "status": {
+  "cmdId": "5ec2e0c3-aa80-4d42-b291-802407c5f42e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784423",
+ "buildStep": {
+  "cmdId": "bd592b6b-a5dc-4444-81e1-c258bfc4e9f0",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel.rtd --append-section :JSON:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel_xml.rtd --add-section BUILD_METADATA:JSON:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel_build.rtd --add-section EMBEDDED_METADATA:RAW:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel.xml --add-section SYSTEM_METADATA:RAW:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u280_gen3x16_xdma_1_202211_1 --output /users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/partial.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:true",
+   "--add-section",
+   ":JSON:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel.rtd",
+   "--append-section",
+   ":JSON:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/vadd_kernel.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/users/y_sojis/cnn_accelerator/vitis_kernel/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_u280_gen3x16_xdma_1_202211_1",
+   "--output",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784424",
+ "status": {
+  "cmdId": "bd592b6b-a5dc-4444-81e1-c258bfc4e9f0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784642",
+ "status": {
+  "cmdId": "bd592b6b-a5dc-4444-81e1-c258bfc4e9f0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784644",
+ "buildStep": {
+  "cmdId": "70894eac-6f3c-4c8e-b41b-9851e0971080",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xclbin.info --input /users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xclbin.info",
+   "--input",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:44 2025",
+ "timestampMillis": "1765417784644",
+ "status": {
+  "cmdId": "70894eac-6f3c-4c8e-b41b-9851e0971080",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:45 2025",
+ "timestampMillis": "1765417785101",
+ "status": {
+  "cmdId": "70894eac-6f3c-4c8e-b41b-9851e0971080",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 18:49:45 2025",
+ "timestampMillis": "1765417785103",
+ "buildStep": {
+  "cmdId": "22891e86-f40b-422c-a3dd-915961e1c94b",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:45 2025",
+ "timestampMillis": "1765417785103",
+ "status": {
+  "cmdId": "22891e86-f40b-422c-a3dd-915961e1c94b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:45 2025",
+ "timestampMillis": "1765417785104",
+ "status": {
+  "cmdId": "22891e86-f40b-422c-a3dd-915961e1c94b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:45 2025",
+ "timestampMillis": "1765417785107",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/system_estimate_vadd_kernel.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:45 2025",
+ "timestampMillis": "1765417785113",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 18:49:45 2025",
+ "timestampMillis": "1765417785114",
+ "status": {
+  "cmdId": "cfcc0c63-c8b8-4f1c-a2be-afc0ba4070f3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:45 2025",
+ "timestampMillis": "1765417785188",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/link/v++_link_vadd_kernel_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 18:49:45 2025",
+ "timestampMillis": "1765417785188",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/v++_link_vadd_kernel_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

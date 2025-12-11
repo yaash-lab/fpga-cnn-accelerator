@@ -1,0 +1,236 @@
+<ENTRY>
+{
+ "thisFile": "/users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Dec 10 16:52:50 2025",
+ "timestampMillis": "1765410770992",
+ "buildStep": {
+  "cmdId": "cc8159d3-d75f-4763-9a92-2193907df4f8",
+  "name": "v++",
+  "logFile": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/vadd_kernel/vadd_kernel.steps.log",
+  "commandLine": "/share/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform xilinx_u280_gen3x16_xdma_1_202211_1 --save-temps -c -k vadd_kernel vadd_kernel.cpp -o vadd_kernel.xo ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u280_gen3x16_xdma_1_202211_1",
+   "--save-temps",
+   "-c",
+   "-k",
+   "vadd_kernel",
+   "vadd_kernel.cpp",
+   "-o",
+   "vadd_kernel.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:52:50 2025",
+ "timestampMillis": "1765410770992",
+ "status": {
+  "cmdId": "cc8159d3-d75f-4763-9a92-2193907df4f8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Dec 10 16:52:53 2025",
+ "timestampMillis": "1765410773998",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u280_gen3x16_xdma_1_202211_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "vadd_kernel",
+     "file": "/users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/users/y_sojis/cnn_accelerator/vitis_kernel/vadd_kernel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2023.2. SW Build 4026344 on 2023-10-11-15:42:10"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec 10 16:52:54 2025",
+ "timestampMillis": "1765410774003",
+ "buildStep": {
+  "cmdId": "5d34ce4d-3b69-4aff-94d3-3ccab080048a",
+  "name": "vitis_hls",
+  "logFile": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/vadd_kernel/vadd_kernel/vitis_hls.log",
+  "commandLine": "vitis_hls -f /users/y_sojis/cnn_accelerator/vitis_kernel/_x/vadd_kernel/vadd_kernel/vadd_kernel.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/vadd_kernel/vadd_kernel/vadd_kernel.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/users/y_sojis/cnn_accelerator/vitis_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:52:54 2025",
+ "timestampMillis": "1765410774003",
+ "status": {
+  "cmdId": "5d34ce4d-3b69-4aff-94d3-3ccab080048a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:53:42 2025",
+ "timestampMillis": "1765410822739",
+ "status": {
+  "cmdId": "5d34ce4d-3b69-4aff-94d3-3ccab080048a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 16:53:42 2025",
+ "timestampMillis": "1765410822751",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/vadd_kernel/vadd_kernel/vadd_kernel/solution/.autopilot/db/vadd_kernel.design.xml",
+  "name": "vadd_kernel",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 16:53:42 2025",
+ "timestampMillis": "1765410822752",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/vadd_kernel/vadd_kernel/vadd_kernel/solution/.autopilot/db/.message_syn.xml",
+  "name": "vadd_kernel",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 16:53:42 2025",
+ "timestampMillis": "1765410822752",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/vadd_kernel/hls_reports/vadd_kernel_csynth.rpt",
+  "name": "vadd_kernel",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 16:53:42 2025",
+ "timestampMillis": "1765410822753",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/vadd_kernel/vadd_kernel/vadd_kernel/solution/syn/report/vadd_kernel_csynth.xml",
+  "name": "vadd_kernel",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 16:53:42 2025",
+ "timestampMillis": "1765410822755",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/vadd_kernel/system_estimate_vadd_kernel.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 10 16:53:42 2025",
+ "timestampMillis": "1765410822784",
+ "status": {
+  "cmdId": "cc8159d3-d75f-4763-9a92-2193907df4f8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 16:53:42 2025",
+ "timestampMillis": "1765410822859",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/reports/vadd_kernel/v++_compile_vadd_kernel_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec 10 16:53:42 2025",
+ "timestampMillis": "1765410822859",
+ "report": {
+  "path": "/users/y_sojis/cnn_accelerator/vitis_kernel/_x/v++_compile_vadd_kernel_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

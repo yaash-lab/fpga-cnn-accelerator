@@ -1,0 +1,43 @@
+========================================
+COMPLETE HLS SYNTHESIS RESULTS
+========================================
+
+1. CONVOLUTION LAYER
+--------------------
+Latency: 9.53 µs (953 cycles)
+Clock: 137 MHz
+Resources:
+  - DSP: 27
+  - LUT: 5,679
+  - FF: 4,727
+  - BRAM: 2
+
+2. MAXPOOL LAYER
+--------------------
+Latency: 288 µs (28,817 cycles)
+Clock: 137 MHz
+Resources:
+  - DSP: 1
+  - LUT: 1,848
+  - FF: 1,296
+  - BRAM: 2
+
+3. FULLY CONNECTED LAYER
+--------------------
+Latency: 2.992 ms (299,152 cycles)
+Clock: 137 MHz
+Resources:
+  - DSP: 2,304 (25% utilization!)
+  - LUT: 294,936
+  - FF: 282,607
+  - BRAM: 2
+
+TOTAL CNN PIPELINE (Sequential):
+--------------------
+Total Latency: ~3.3 ms per image
+Throughput: ~303 images/sec
+Total DSPs: 2,332 (26% of U280)
+Total LUTs: 302,463 (23% of U280)
+Total FFs: 288,630 (11% of U280)
+
+NOTE: FC layer dominates latency (90% of total)
